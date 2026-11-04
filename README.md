@@ -4,7 +4,7 @@ A real-time drum practice tool. Play along to a groove on an electronic kit
 or drum pad, and it shows how close each hit landed: early, late, or right
 on, as you play.
 
-> **Status: early prototype, in active development.** The source code is
+> **Status: functional prototype, in active development.** The source code is
 > private. This page is for following progress, the roadmap, and
 > giving feedback.
 
