@@ -1,6 +1,70 @@
 # Changelog
 
-Notable changes to Drum Evaluator, newest first.
+Notable changes to Embrace The Beep, newest
+first.
+
+## 2026-11-04
+
+- **A new name: Embrace The Beep.** The app was called Drum Evaluator.
+
+## 2026-11-03
+
+- **Testing acoustic drums with a microphone** (an early test, not in
+  the app yet). On a practice pad, recorded with one microphone in one
+  room, the test found every stroke: singles, sixteenths up to 160 BPM,
+  doubles, accents and ghost notes, and the grace notes of flams and
+  drags. Talking in the room wasn't mistaken for hits. Still to try: a
+  snare and a floor tom, which ring longer, and checking the timing
+  against an electronic pad.
+
+## 2026-11-01
+
+- **Many more built-in grooves**: 3/4 waltz, 7/4, blues, bossa nova,
+  half-time, half-time shuffle, samba, country train beat, blast beats,
+  double bass (8ths, 16ths, triplets, sextuplets), Bonham and Grohl
+  triplets, and more.
+
+## 2026-10-31
+
+- **Drags**: a main note with two soft grace notes before it. Tap a cell
+  once more past the inverse flam in the Groove Editor to make one. Drags
+  are drawn in the notation, played by Listen and scored, and the review
+  says what happened to their grace notes.
+- **The 11 drag rudiments** are built in: Drag, Single and Double Drag
+  Tap, Lesson 25, Single Dragadiddle, Drag Paradiddles 1 and 2, Single,
+  Double and Triple Ratamacue, and Flam Drag.
+- A flam's grace note now counts anywhere from 5 to 100 ms before its
+  main note (it was up to 30 ms on 2026-10-28). A grace note as loud as
+  its main note counts as missed, and the review says so.
+
+## 2026-10-30
+
+- **Play back a session**: the review has a Play button that plays what
+  you played, with real drum sounds and, if you want, the click.
+- **Tempo trainer** on the Metronome: the tempo goes up (or down) by a
+  set number of BPM every few bars.
+- **Notation in the Groove Editor**, above the grid when the window is
+  tall enough.
+- **Recording finds grooves 1 to 4 bars long**, and after a take you can
+  choose another length ("Use 2 bars instead").
+- **Import and export grooves** (Settings): bring in `.mid` files from
+  other drum software, and save your grooves as `.mid` files.
+- **Short windows** (a phone on its side): Practice and the Groove
+  Editor fit their controls on one row.
+- The window opens at the size and place you left it.
+
+## 2026-10-29
+
+- **Shorter calibration instructions.**
+
+## 2026-10-28
+
+- **Extra notes cost 5 points each**, and the line beside the score says
+  how many points they took off.
+- **Flams that are too close or too far apart**: a grace note right on
+  top of its main note, or too far in front, now counts as missed, and
+  the review says which.
+- Simpler help text.
 
 ## 2026-10-27
 
