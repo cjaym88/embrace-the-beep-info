@@ -3,6 +3,37 @@
 Notable changes to Embrace The Beep, newest
 first.
 
+## 2026-11-14
+
+- **Use a microphone as your kit** (Windows), for a practice pad or a
+  snare: Settings → kit input → Microphone. Every hit the mic hears
+  counts as a snare hit, so you can practise rudiments and single-drum
+  patterns without an electronic kit. New, and still being tested.
+- **Calibration works with a mic kit**: play the Pad part on the pad or
+  drum you'll practise on, and do the Click part with your headphones
+  held up to the mic.
+- Settings help explains how to play without a MIDI kit.
+
+## 2026-11-11
+
+- **Testing a full acoustic kit** (an early test, not in the app yet).
+  113 recordings of one player's kit: snare, 4 toms, a kick with two
+  pedals, hi-hat, crashes, rides and a china. Every single hit was found
+  on every drum and cymbal. Quick playing: about 9 in 10 strokes found on
+  the snare, the higher toms and the kicks; the floor toms were harder.
+- **Which drum was hit?** A first try named the right drum or cymbal for
+  93% of single hits, and mostly told the two kick pedals apart. Hits
+  that land at the same moment as the kick are mostly missed for now.
+
+## 2026-11-05
+
+- **Testing a snare and a floor tom** (an early test, not in the app
+  yet). Every single stroke was found. Quick playing was harder at
+  first: the drum is still ringing when the next stroke lands, and only
+  about a third of quick strokes were found. New ways of listening
+  (across many pitches at once, and learning how the drum rings) brought
+  that up to about 9 in 10 on both drums.
+
 ## 2026-11-04
 
 - **A new name: Embrace The Beep.** The app was called Drum Evaluator.

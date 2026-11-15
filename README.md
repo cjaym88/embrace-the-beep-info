@@ -1,5 +1,36 @@
 # Embrace The Beep
 
+A message from CJ:
+
+Hi! Thank you for checking out my drum rhythm trainer app, Embrace The Beep.
+
+I want to take a moment and explain what this app is for, and what it is not. This app is a utility intended to help drummers and percussionists practice specific patterns and get objective, real-time feedback on their timing and dynamics. It includes the ability to chart out grooves and patterns up to 4 bars long, as well as over 75 included in the app. My hope is that by using this app, drummers will be able to more quickly improve their timing and build speed on whatever it is they are working on, so that they can spend more time being creative and performative.
+
+This app is **NOT** a substitute for a drum teacher. Embrace The Beep can tell you how well you're keeping timing and dynamics with extremely high levels of accuracy, but it cannot tell you what you should work on next or if your playing has feel/soul to it. If possible, you should seek out a local drum instructor to help guide you through your learning journey, with Embrace The Beep as a tool to measure a specific aspect of your progress.
+
+While I am working hard on making this app compatible with acoustic drumkits, I anticipate it will be most effective for single-instrument percussionists and e-kit users. The reason is simply that multiple sounds blending together is a lot harder to parse than a single instrument, such as a drumline snare drummer or an e-kit that sends out MIDI notes.
+
+Now, let's talk about how I've used, and have not used, AI for this project. I started this project after getting laid off from my job of 7 years as a software tester. My expertise and experience is not in programming or software development. While I decided everything that this app will and will not do, I used Claude to do the coding and a lot of back-end analysis needed to get rhythm and audio detection working properly. For the UI, I allowed Claude to programmatically draw simple shapes like rectangles, circles, and diamonds, using syntax available to Rust and python. These are code-only shapes that do not have asset files.
+
+While I find the use of AI acceptable for writing code or as a productivity tool, I strongly believe that AI should have no role in creating an artistic product. This is a shout-out against generative AI used to create AI art or visual assets. Art should remain a human endeavour, a way for people to communicate messages and emotions to other humans. This app contains no AI-generated art assets, and Claude was not used for complex drawings, such as the notation staff. I used existing packages for things like that, which will be noted in the credits section. The logo was hand-drawn by my talented niece, with no AI involvement.
+
+Embrace The Beep does not use AI within its own functionality. It uses a lot of math, does not connect to the internet, and does not have a built-in AI model. I have no interest in collecting any data from users and risk violating their privacy.
+
+Every pattern and groove that comes with this app was manually charted by me, using the app's notation tool, with the exception of some of the flam rudiments, where the AI took it upon itself to create them while testing flam detection. I checked them against the Percussive Arts Society rudiment list to ensure they were accurate, found that they were, and decided not to manually re-notate this small group. I include this instance for the sake of transparency, as I understand that different people have different tolerances over the use of AI.
+
+Embrace The Beep is intended to help drummers overcome their shortcomings, blind spots, and weaknesses. It is not intended to make up for them. Drumming is a discipline that requires many thousands of hours of practice to become good at, many of them spent on things like rudiments, and this app will not change that.
+
+With all that said, thank you for reading this and I hope you will continue to follow the progress of Embrace The Beep as I push towards eventual release. My target audiences will include percussion students and drumkit users of all levels.
+
+Drums are hard\
+Music is hard\
+Be kind to yourself and others\
+Go practice
+
+CJ
+
+---
+
 A real-time drum practice tool. Play along to a groove on an electronic kit
 or drum pad, and it shows how close each hit landed: early, late, or right
 on, as you play.
@@ -69,6 +100,10 @@ Mac, iPhone/iPad and Android. Windows is finished; the others are next.
   along, or with your kit's own metronome.
 - **Plays alongside other audio**: music, lesson videos or screen
   recording.
+- **A microphone as your kit** (new, still being tested): play a
+  practice pad or a snare with no electronic kit. Every hit the mic
+  hears counts as a snare hit, so it suits rudiments and single-drum
+  patterns.
 - **Runs entirely on your computer**: no account, no internet, nothing
   uploaded.
 
@@ -131,15 +166,35 @@ out](screenshots/2026-10-27-groove-editor-bar-menu.png)
 grid.*
 
 **Works with:** Windows today, plus any electronic kit or drum pad that
-sends MIDI over USB. Mac, iPhone/iPad and Android versions are next.
+sends MIDI over USB, or a microphone on a practice pad or snare. Mac,
+iPhone/iPad and Android versions are next.
+
+## Acoustic drums: where it stands (2026-11-14)
+
+All results so far are from one player, one set of drums and one room.
+
+- **A practice pad or a snare works in the app now** (Windows), with a
+  microphone as the kit input. It's new and still being tested.
+- **Practice pad:** in testing, the app caught nearly every stroke,
+  including ghost notes and the grace notes of flams and drags.
+- **Snare and toms:** a drum keeps ringing when the next stroke lands,
+  which can hide quick strokes. Slow and medium playing is caught
+  reliably. At speed, a soft stroke right after a loud one can still
+  be missed.
+- **Full kit:** in a first recording of a full acoustic kit, every
+  single hit on every drum and cymbal was found. The hard part is
+  telling *which* drum or cymbal was hit, especially when the kick lands
+  at the same moment as other things. That's being worked on, and full
+  kit support isn't in the app yet.
+- **Still to check:** how exact the timing is, compared with an
+  electronic pad.
 
 ## Coming to phones
 
 The phone screens are laid out for every size from the small iPhone SE to
 the largest Pro Max (pictures in the 2026-10-16 changelog). On a phone:
 
-- **Practise with the phone sideways on a stand**, every button big enough
-  to tap from the kit.
+- **Practise with the phone sideways on a stand.**
 - **The Groove Editor and recording go sideways too.**
 - **The metronome works upright or sideways.**
 - **Light and dark**, following your phone's own setting.
@@ -147,13 +202,10 @@ the largest Pro Max (pictures in the 2026-10-16 changelog). On a phone:
 ## Roadmap
 
 **Next up**
-- **Acoustic drums with a microphone.** The first test on a practice pad
-  went well (2026-11-03 in the changelog). Next: a snare and a floor tom,
-  and checking the timing. If they pass, the app will be able to listen
-  to a real drum, not only an electronic kit.
-- **Mac**, then **iPhone/iPad** and **Android**, with the same scoring
-  on every platform, and flams drawn clearly in the notation on small
-  screens.
+- **Acoustic drums with a microphone.** One pad or drum works now (see
+  "Acoustic drums: where it stands" above). Next: checking the timing,
+  then telling drums and cymbals apart for a full kit.
+- **Mac**, then **iPhone/iPad** and **Android**
 - **A test version for a few testers** on Windows.
 
 **Patterns**
